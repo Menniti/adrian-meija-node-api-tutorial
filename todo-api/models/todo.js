@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 
-var todoSchema = new mongoose.Schema({
+var TodoSchema = new mongoose.Schema({
 	name: String,
 	completed: Boolean,
 	note: String,
@@ -12,4 +12,4 @@ var todoSchema = new mongoose.Schema({
 	}
 });
 
-module.exports = mongoose.model('todo', todoSchema);
+module.exports = mongoose.model('Todo', TodoSchema);
